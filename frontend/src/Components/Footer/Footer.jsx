@@ -10,7 +10,7 @@ export default function Footer() {
    <div className="footer">
     <div className="footer-logo">
         <img src={footer_logo} alt='footer-logo'/>
-        <p>SHOPPERS</p>
+        <p>SHOPPERS Karan</p>
     </div>
     <ul className="footer-links">
         <li>Company</li>
