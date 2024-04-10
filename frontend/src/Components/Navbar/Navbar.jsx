@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="nav-logo">
-                <img src={logo} alt='' />
+            <Link style={{ textDecoration: 'none' }} to='/'> <img src={logo} alt='' /></Link>
                 <p>Shopper</p>
             </div>
             <ul className='nav-menu'>
