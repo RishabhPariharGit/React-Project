@@ -21,7 +21,7 @@ const Hero = () => {
                                         data-animation="fadeInUp"
                                         data-delay=".2s"
                                     >
-                                        <span>Admition Going On Please join f </span>
+                                        <span>Admissions Going On </span>
                                         <br />
                                         Eduara University
                                     </h1>
