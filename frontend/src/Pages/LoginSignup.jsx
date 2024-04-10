@@ -3,7 +3,7 @@ import './Css/LoginSignup.css'
 
 export default function LoginSignup() {
   return (
-    <div className="main-cont">
+    <div className="main-cont-Login">
       <div className="loginSignup-cont">
         <h1>Sign UP</h1>
         <div className="loginSignup-fields">
