@@ -11,4 +11,5 @@ Date 14-apr-24
 - Created Logic for add to Cart.
 - Updated the type error which was coming on the CartItems.jsx file
 - added styling to add to cart page
-- 
+- added the logic to add the total cart amount
+- completed the todays working and pushed the complete changes
