@@ -7,7 +7,7 @@ export const ShopContext = createContext(null);  //created ShopContext using cre
 
 
 const getDefaultCart = ()=>{                                 //This is the logic to create empty cart
-  const cart ={};
+  let cart ={};
 for (let index = 0; index < all_product.length+1; index++) {
     cart[index]=0;
   }
@@ -18,7 +18,7 @@ for (let index = 0; index < all_product.length+1; index++) {
 
 const ShopContextProvider = (props)=>{     //created a ShopContextProvider()
 
-  const [cartItems,setCartItems] =useState(getDefaultCart()); // use state to get all products data 
+  const [cartItems,setCartItems] = useState(getDefaultCart()); // use state to get all products data 
 
 const addToCart =(itemId)=>{                                 //logic for addtocart button 
   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
