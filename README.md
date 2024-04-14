@@ -5,3 +5,7 @@ Learned how to push the changes on the git
 Learned how to take the pull of the changes from the git
 Updated the product page of the website 
 Completed the changes
+
+
+Date 14-apr-24
+- Created Logic for add to Cart.
