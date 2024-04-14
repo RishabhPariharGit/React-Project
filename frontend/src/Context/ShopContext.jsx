@@ -20,12 +20,12 @@ const ShopContextProvider = (props)=>{     //created a ShopContextProvider()
 
   const [cartItems,setCartItems] =useState(getDefaultCart()); // use state to get all products data 
 
-const addToCart =(itemId)=>{
+const addToCart =(itemId)=>{                                 //logic for addtocart button 
   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
   console.log(cartItems);
 }
 
-const removeFromCart =(itemId)=>{
+const removeFromCart =(itemId)=>{                    // logic to remove items from cart
   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
 }
 
