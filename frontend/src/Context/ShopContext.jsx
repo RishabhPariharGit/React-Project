@@ -29,7 +29,19 @@ const removeFromCart =(itemId)=>{                    // logic to remove items fr
   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
 }
 
-const contextValue = {all_product,cartItems,addToCart,removeFromCart};    // a variable is created to store the data and values that 
+const getTotalCartAmount = () => {
+  let totalAmount = 0;
+  for (const item in cartItems) {
+    if (cartItems[item] > 0) {
+      let itemInfo = all_product.find((product) => product.id === Number(item));
+      totalAmount += itemInfo.new_price * cartItems[item];
+    }
+  }
+  return totalAmount;
+}
+
+
+const contextValue = { getTotalCartAmount, all_product,cartItems,addToCart,removeFromCart};    // a variable is created to store the data and values that 
 // we want to access using context
 
   return(
