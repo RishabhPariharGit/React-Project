@@ -17,3 +17,6 @@ Date 14-apr-24
 Date 15-apr-24
 -started working on the cart total items display logic
 -added the logic for cart count as we add the products to the cart
+-added complete backend folder
+-pushed all the files of backend to git
+
