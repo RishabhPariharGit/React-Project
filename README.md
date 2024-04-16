@@ -13,3 +13,7 @@ Date 14-apr-24
 - added styling to add to cart page
 - added the logic to add the total cart amount
 - completed the todays working and pushed the complete changes
+
+Date 15-apr-24
+-started working on the cart total items display logic
+-added the logic for cart count as we add the products to the cart
