@@ -41,7 +41,23 @@ const getTotalCartAmount = () => {
 }
 
 
-const contextValue = { getTotalCartAmount, all_product,cartItems,addToCart,removeFromCart};    // a variable is created to store the data and values that 
+
+const getTotalCartItems = ()=>{
+let totalItem = 0;
+for (const item in cartItems){
+  if(cartItems[item]>0){
+    totalItem += cartItems[item];
+  }
+}
+return totalItem;
+}
+
+
+
+
+
+
+const contextValue = { getTotalCartItems,getTotalCartAmount, all_product,cartItems,addToCart,removeFromCart};    // a variable is created to store the data and values that 
 // we want to access using context
 
   return(
