@@ -20,3 +20,11 @@ Date 15-apr-24
 -added complete backend folder
 -pushed all the files of backend to git
 
+
+Date 18-apr-24
+-started working on the backend part of the project
+-connected the port 
+-connected the port to port 4000.
+-created ID on mongo db atlas database.
+-completed the changes 
+
