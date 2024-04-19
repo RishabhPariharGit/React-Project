@@ -24,14 +24,34 @@ app.use(express.json());    //whatever req we will get from response will be pas
 app.use(cors());   // connect react app to express port 4000
 
 // Database connection 
-// mongoose.connect("mongodb+srv://rishabhgit1704:Akatsuki@08@cluster0.lo5rf1m.mongodb.net/Ecommerce");
-
+mongoose.connect("mongodb+srv://rishabhgit1704:Akatsuki08@cluster0.mxdbqxy.mongodb.net/e-commerce");
+console.log("mongodb connected");
 //Api Creation
 
 
 app.get("/",(req,res)=>{
 res.send("Express app is running");
 })
+
+ //Image Storage Engine Multer
+ const storage = multer.diskStorage({
+    destination:'./upload/images',
+    filename:(req,file,cb)=>{
+return cb(null,`${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`)
+    }
+ })
+
+ const upload =multer({storage:storage})
+
+ //creating upload Endpoint for images
+ app.use('/images',express.static('upload/images'))
+
+ app.post("/upload",upload.single('product'),(req,res)=>{
+res.json({
+    success:1,
+    image_url:`http://localhost:${port}/images/${req.file.filename}`
+})
+ })
 
 app.listen(port,(error)=>{
     if(!error){
