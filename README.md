@@ -31,4 +31,6 @@ Date 18-apr-24
 Date 19-apr-24
 -Started working on the backend 
 -Connected database mongodb with new project
+- Added Multer for uploading files.
+- 
 
