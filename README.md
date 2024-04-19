@@ -33,4 +33,7 @@ Date 19-apr-24
 -Connected database mongodb with new project
 - Added Multer for uploading files.
 - Uploaded one image to test multer
+- tested the url of the image
+- checked the file path
+- completed the changes 
 
