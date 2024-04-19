@@ -15,22 +15,22 @@ Date 14-apr-24
 - completed the todays working and pushed the complete changes
 
 Date 15-apr-24
--started working on the cart total items display logic
--added the logic for cart count as we add the products to the cart
--added complete backend folder
--pushed all the files of backend to git
+- started working on the cart total items display logic
+- added the logic for cart count as we add the products to the cart
+- added complete backend folder
+- pushed all the files of backend to git
 
 
 Date 18-apr-24
--started working on the backend part of the project
--connected the port 
--connected the port to port 4000.
--created ID on mongo db atlas database.
--completed the changes 
+- started working on the backend part of the project
+- connected the port 
+- connected the port to port 4000.
+- created ID on mongo db atlas database.
+- completed the changes 
 
 Date 19-apr-24
--Started working on the backend 
--Connected database mongodb with new project
+- Started working on the backend 
+- Connected database mongodb with new project
 - Added Multer for uploading files.
 - Uploaded one image to test multer
 - tested the url of the image
