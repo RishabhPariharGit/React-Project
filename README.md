@@ -40,5 +40,6 @@ Date 19-apr-24
 Date 22-apr-24
 - Started Working on the changes
 - Started Working on the backend of the website
+- started creating endpoint for producut upload.
 - 
 
