@@ -42,4 +42,7 @@ Date 22-apr-24
 - Started Working on the backend of the website
 - started creating endpoint for producut upload.
 - created api for updating product on the database.
+- uploaded one product on the database with the name product 123
+- checed the api with the help of thunderclient
+- 
 
