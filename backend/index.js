@@ -129,6 +129,20 @@ id = last_product.id+1;
     })
 })
 
+
+//creating Api For deleting products
+
+app.post('/removeproduct',async (req,res)=>{
+await Product.findOneAndDelete({id:req.body.id});
+console.log("Removed");
+
+res.json({
+    success:true,
+    name:req.body.name
+})
+})
+
+
 app.listen(port,(error)=>{
     if(!error){
         console.log("Server Running on Port "+port);
