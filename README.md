@@ -47,4 +47,8 @@ Date 22-apr-24
 - created a logic with which automatic updation of product id will be done
 - created API for removing the product.
 - Created API for fetching all the products from the database
+- Checked the Api with the help of Thunder client
+- Uploaded multiple products into the database.
+- fetched all the products with the help of fetch API
+- Completed the todays changes 
 
