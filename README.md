@@ -46,5 +46,5 @@ Date 22-apr-24
 - checed the api with the help of thunderclient
 - created a logic with which automatic updation of product id will be done
 - created API for removing the product.
-- 
+- Created API for fetching all the products from the database
 
