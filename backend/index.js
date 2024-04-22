@@ -98,8 +98,22 @@ available:{
 })
 
 app.post('/addproduct',async (req,res)=>{     //cretion of api for product upload
+    
+
+    let products = await Product.find({});  //logic for autommatic updation of product id
+    let id;
+    if(products.length>0){
+let last_product_array = products.slice(-1);
+let last_product = last_product_array[0];
+id = last_product.id+1;
+    }
+
+    else{
+        id=1;
+    }                                 // end of logic for automatic updation of product id
+    
     const product = new Product({
-        id:req.body.id,
+        id:id,
         name:req.body.name,  
         image:req.body.image, 
         category:req.body.category,  
