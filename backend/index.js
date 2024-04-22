@@ -97,7 +97,7 @@ available:{
  },
 })
 
-app.post('/addproduct',async (req,res)=>{
+app.post('/addproduct',async (req,res)=>{     //cretion of api for product upload
     const product = new Product({
         id:req.body.id,
         name:req.body.name,  
