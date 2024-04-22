@@ -35,5 +35,10 @@ Date 19-apr-24
 - Uploaded one image to test multer
 - tested the url of the image
 - checked the file path
-- completed the changes 
+- completed the changes
+
+Date 22-apr-24
+- Started Working on the changes
+- Started Working on the backend of the website
+- 
 
