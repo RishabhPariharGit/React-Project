@@ -44,5 +44,5 @@ Date 22-apr-24
 - created api for updating product on the database.
 - uploaded one product on the database with the name product 123
 - checed the api with the help of thunderclient
-- 
+- created a logic with which automatic updation of product id will be done
 
