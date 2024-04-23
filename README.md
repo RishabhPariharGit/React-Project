@@ -58,5 +58,6 @@ Date 23-apr-24
 - Added new file for Admin Panel
 - Used vite for creation of the project
 - Created folder structure for Admin panel
+- Updated Logo and Profile Picture on the admin panel
 
 
