@@ -56,5 +56,7 @@ Date 23-apr-24
 - started working on the project.
 - Started designing the Admin Panel of the website.
 - Added new file for Admin Panel
+- Used vite for creation of the project
+- 
 
 
