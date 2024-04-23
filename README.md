@@ -57,6 +57,6 @@ Date 23-apr-24
 - Started designing the Admin Panel of the website.
 - Added new file for Admin Panel
 - Used vite for creation of the project
-- 
+- Created folder structure for Admin panel
 
 
