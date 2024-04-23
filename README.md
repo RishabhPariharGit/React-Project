@@ -50,5 +50,11 @@ Date 22-apr-24
 - Checked the Api with the help of Thunder client
 - Uploaded multiple products into the database.
 - fetched all the products with the help of fetch API
-- Completed the todays changes 
+- Completed the todays changes
+
+Date 23-apr-24
+- started working on the project.
+- Started designing the Admin Panel of the website.
+- 
+
 
