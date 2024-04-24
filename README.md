@@ -63,6 +63,7 @@ Date 23-apr-24
 Date 24-apr-24
 - started working on the Admin Panel
 - Worked on the Designing of the Admin Panel
+- Added new images for the Admin Panel
 - 
 
 
