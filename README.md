@@ -71,6 +71,6 @@ Date 24-apr-24
 - Added the styling for the Add product file
 - Added a new file Listing the products
 - Updated the changes
-- 
+- updated the logic for image dislay
 
 
