@@ -68,6 +68,9 @@ Date 24-apr-24
 - Checked the mobile responsiveness of the admin panel
 - Updated the media queries for the mobile and tab devices
 - Added a new fil for adding the products
-- Added the styling for the Add product file 
+- Added the styling for the Add product file
+- Added a new file Listing the products
+- Updated the changes
+- 
 
 
