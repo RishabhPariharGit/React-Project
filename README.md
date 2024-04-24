@@ -60,4 +60,9 @@ Date 23-apr-24
 - Created folder structure for Admin panel
 - Updated Logo and Profile Picture on the admin panel
 
+Date 24-apr-24
+- started working on the Admin Panel
+- Worked on the Designing of the Admin Panel
+- 
+
 
