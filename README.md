@@ -65,6 +65,6 @@ Date 24-apr-24
 - Worked on the Designing of the Admin Panel
 - Added new images for the Admin Panel
 - Updated the styling of the Admin panel
-- 
+- Checked the mobile responsiveness of the admin panel
 
 
