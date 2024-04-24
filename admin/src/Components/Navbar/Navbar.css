@@ -7,3 +7,24 @@
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 2px;
 }
+.nav-logo{
+    width: 200px;
+}
+
+.nav-profile{
+    width: 75px;
+}
+
+@media(max-width:800px)  {
+    .navbar{
+        padding: 15px 30px;
+    }
+
+    .nav-logo{
+        width: 150px;
+    }
+    
+    .nav-profile{
+        width: 60px;
+    }
+}
