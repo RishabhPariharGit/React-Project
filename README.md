@@ -79,6 +79,8 @@ Date 25-apr-24
 - Added the logic to update the product details using the changeHandler function
 - Checked the changeHandler function is executing  or not when clicked with add product button
 - uploaded new images to multer
-- Added the fetch Api for uploading product from admin dashboard to mongodb atlas database 
+- Added the fetch Api for uploading product from admin dashboard to mongodb atlas database
+- checked the mongo for the data insertion
+- 
   
 
