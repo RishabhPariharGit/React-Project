@@ -81,6 +81,6 @@ Date 25-apr-24
 - uploaded new images to multer
 - Added the fetch Api for uploading product from admin dashboard to mongodb atlas database
 - checked the mongo for the data insertion
-- 
+- completed the changes
   
 
