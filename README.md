@@ -76,6 +76,7 @@ Date 24-apr-24
 Date 25-apr-24
 - started working on the project
 - pulled the Admin folder from git
+- Added the logic to update the product details using the changeHandler function
 - 
   
 
