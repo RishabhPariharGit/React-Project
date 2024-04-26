@@ -84,4 +84,6 @@ Date 25-apr-24
 - added new images and product details to the database
 - completed the changes
   
+Date 26-apr-24
+- Checked the backend 
 
