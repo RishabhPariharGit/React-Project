@@ -89,5 +89,6 @@ Date 26-apr-24
 
 Date 27-apr-24
 - Started Working on the Project
+- Started Designing the List product page of admin Panel
 - 
 
