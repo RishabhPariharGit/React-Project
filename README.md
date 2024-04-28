@@ -93,5 +93,8 @@ Date 27-apr-24
 - Added the logic to fetch all the products from the databse
 - fetched the products form the databse
 - displayed the products on the admin panel
-- 
+- comopleted the changes
 
+Date 28-apr-24
+- started working on the project.
+- 
