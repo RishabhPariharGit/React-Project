@@ -97,4 +97,4 @@ Date 27-apr-24
 
 Date 28-apr-24
 - started working on the project.
-- 
+- Added new image files on the Multer
