@@ -6,7 +6,9 @@ const jwt = require("jsonwebtoken");  //initialized json web token
 const multer = require("multer");  // initialized multer for storage of files
 const path = require("path");  // initialized path from the express server
 const cors = require("cors"); //initialized cors 
-const express = require('express')
+const express = require('express');
+const { type } = require("os");
+const { error } = require("console");
 const app = express()
 const port = 4000
 
@@ -150,6 +152,53 @@ app.get('/allproducts',async (req,res)=>{
     console.log("All products fetched");
     res.send(products);
 })
+
+
+
+//Schema Creation for User Model
+
+const Users = mongoose.model('Users',{
+    name:{
+        type:String,
+    },
+    email:{
+type:String,
+unique:true,
+    },
+    password:{
+        type:String,
+    },
+    cartData:{
+        type:Object,
+    },
+    date:{
+type:Date,
+default:Date.now,
+    }
+})
+
+
+//Creating Endpoint for regestering the user
+
+app.post('/signup',async(req,res)=>{
+ 
+let check = await Users.findOne({email:req.body.email});
+
+if (check) {
+    return res.status(400).json({success:false,errors:"existing user found with same email"})
+}
+
+let cart = {};
+
+for(let i = 0; i < 300; i++){
+    cart[i]=0;
+}
+
+//code from here
+
+})
+
+
 
 app.listen(port,(error)=>{
     if(!error){
