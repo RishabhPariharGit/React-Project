@@ -18,7 +18,7 @@ useEffect(()=>{
 },[])             //this function will executed only once because of []
 
 
-const remove_product = async (id)=>{
+const remove_product = async (id)=>{                     //added the logic to remove product from the Admin Panel and the database
   await fetch('http://localhost:4000/removeproduct',{
       method:'POST',
       headers:{
