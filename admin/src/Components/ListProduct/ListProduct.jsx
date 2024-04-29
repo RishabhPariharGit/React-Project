@@ -30,7 +30,7 @@ useEffect(()=>{
 </div>
 <div className="listproduct-allproducts">
 {allproducts.map((product,index)=>{
-    return <div key={index} className="listproduct-format-main listproduct-format">
+    return <><div key={index} className="listproduct-format-main listproduct-format">
       <img src={product.image} alt="" className="listproduct-product-icon" />
 <p>{product.name}</p>    
 <p>${product.old_price}</p>
@@ -38,7 +38,9 @@ useEffect(()=>{
 <p>{product.category}</p>
 <img className='listproduct-remove-icon' src={cross_icon} alt="" />
 
-    </div>                                  //created a template to map all the products
+    </div> 
+    <hr />  
+    </>                               //created a template to map all the products
 })}
 </div>
     </div>
