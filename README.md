@@ -106,5 +106,6 @@ Date 29-apr-24
 - Added the Logic to remove the products from the database and the admin panel
 - Added the styling to the List Product.jsx file
 - Checked the mobile responsiveness of the Admin panel
-- 
+- Added all the products to the database
+- Added the logic to Upload the Cart Items to the Database
   
