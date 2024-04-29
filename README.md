@@ -102,4 +102,6 @@ Date 28-apr-24
 Date 29-apr-24
 - Started Working on the Project
 - Created A new Branch Named "Changes_Apr_29_24"
+- Added Styling to List product Page of the Admin Panel
+- Added the Logic to remove the products from the database and the admin panel
   
