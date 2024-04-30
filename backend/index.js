@@ -194,8 +194,52 @@ for(let i = 0; i < 300; i++){
     cart[i]=0;
 }
 
-//code from here
+const user = new Users({
+    name:req.body.username,   //creation of the user 
+    email:req.body.email,
+    password:req.body.password,
+    cartData:cart,
+})
 
+await user.save();   //saving the user on the database
+
+ 
+const data = {    // Jwt Authentication
+    user:{         //creation of Key with user ID
+        id:user.id  
+    }
+}
+
+
+const token =jwt.sign(data,'secret_ecom');
+res.json({success:true,token})
+
+})
+
+
+//creating endpoint for user login
+
+app.post('/login', async (req,res)=>{
+    let user = await Users.findOne({email:req.body.email});   //finding the user with the help of email from the database
+    if(user){
+        const passCompare = req.body.password === user.password;  //we are comparing the password
+        if(passCompare){
+            const data = {
+                user:{
+                    id:user.id        //if the password is correct 
+                }
+            }
+            const token = jwt.sign(data,'secret_ecom');  //we will generate one token
+            res.json({success:true,token});
+        }
+        else{
+            res.json({success:false,errors:"Wrong Password"});   //if the password is incorrect we will display error
+        }
+    }
+    else{
+        res.json({success:false,errors:"Wrong Email Id"});  //if the email is incorrect we will display the email error message
+
+    }
 })
 
 
