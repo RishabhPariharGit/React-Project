@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createContext } from "react";
-import all_product from "../Components/Assets/all_product";
+// import all_product from "../Components/Assets/all_product";
 
 
 export const ShopContext = createContext(null);  //created ShopContext using createContext and assigned it null
@@ -8,7 +8,7 @@ export const ShopContext = createContext(null);  //created ShopContext using cre
 
 const getDefaultCart = ()=>{                                 //This is the logic to create empty cart
   let cart ={};
-for (let index = 0; index < all_product.length+1; index++) {
+for (let index = 0; index < 300+1; index++) {
     cart[index]=0;
   }
   return cart;
@@ -18,7 +18,19 @@ for (let index = 0; index < all_product.length+1; index++) {
 
 const ShopContextProvider = (props)=>{     //created a ShopContextProvider()
 
+
+  const [all_product, setAll_Product] = useState([]);  //fetching all product data
+
   const [cartItems,setCartItems] = useState(getDefaultCart()); // use state to get all products data 
+
+
+  useEffect(()=>{
+fetch('http://localhost:4000/allproducts')   //getting all the products from the mongodb database
+.then((response)=>response.json())
+.then((data)=>setAll_Product(data))
+  },[])
+
+
 
 const addToCart =(itemId)=>{                                 //logic for addtocart button 
   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
