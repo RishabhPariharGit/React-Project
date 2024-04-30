@@ -108,4 +108,9 @@ Date 29-apr-24
 - Checked the mobile responsiveness of the Admin panel
 - Added all the products to the database
 - Added the logic to Upload the Cart Items to the Database
+
+Date 30-apr-24
+- Started working on the project
+- Created the logic for Login Authentication
+- Tested the Login Page with the help of Thunderclient
   
