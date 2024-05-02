@@ -12,10 +12,17 @@
     gap: 10px;
 }
 
+
+.nav-logo img {
+height: 35px;
+}
+
+
 .nav-logo p {
     color: black;
-    font-size: 38px;
+    font-size: 25px;
     font-weight: 600;
+    margin: 0px;
 }
 
 .nav-menu {
@@ -24,9 +31,16 @@
     list-style: none;
     gap: 50px;
     color: red;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
 }
+
+
+.nav-menu a{
+    color: black;
+}
+
+
 
 .nav-menu li {
     display: flex;
@@ -42,7 +56,7 @@
     width: 80%;
     height: 3px;
     border-radius: 10px;
-    background: blue;
+    background: rgb(0, 0, 0);
 }
 
 
@@ -52,15 +66,19 @@
     gap: 45px;
 }
 
+.nav-login-cart img{
+    height: 25px;
+}
+
 
 .nav-login-cart button {
-    width: 157px;
-    height: 58px;
+    width: 100px;
+    height: 30px;
     outline: none;
     border: 1px solid grey;
     border-radius: 75px;
     color: rgb(37, 35, 34);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     background: white;
     cursor: pointer;
@@ -72,15 +90,15 @@
 }
 
 .nav-cart-count {
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    height: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
+    margin-top: -30px;
     margin-left: -55px;
     border-radius: 11px;
-    font-size: 14px;
-    background: red;
+    font-size: 10px;
+    background: rgb(0, 0, 0);
     color: white;
 }
