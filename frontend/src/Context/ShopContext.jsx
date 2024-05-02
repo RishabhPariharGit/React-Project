@@ -33,8 +33,20 @@ fetch('http://localhost:4000/allproducts')   //getting all the products from the
 
 
 const addToCart =(itemId)=>{                                 //logic for addtocart button 
-  setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
-  console.log(cartItems);
+  setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}));
+if(localStorage.getItem('auth-token')){
+  fetch('http://localhost:4000/addtocart',{
+    method:'POST',
+    headers:{
+      Accept:'application/form-data',
+      'auth-token':`${localStorage.getItem('auth-token')}`,
+      'Content-Type':'application/json',
+    },
+    body:JSON.stringify({"itemId":itemId}), 
+  })
+  .then((response)=>response.json())
+  .then((data)=>console.log(data));
+ }
 }
 
 const removeFromCart =(itemId)=>{                    // logic to remove items from cart
