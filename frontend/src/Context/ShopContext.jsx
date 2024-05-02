@@ -28,6 +28,19 @@ const ShopContextProvider = (props)=>{     //created a ShopContextProvider()
 fetch('http://localhost:4000/allproducts')   //getting all the products from the mongodb database
 .then((response)=>response.json())
 .then((data)=>setAll_Product(data))
+
+if(localStorage.getItem('auth-token')){
+  fetch('http://localhost:4000/getcart',{
+    method:'POST',
+    headers:{
+      Accept:'application/form-data',
+      'auth-token':`${localStorage.getItem('auth-token')}`,
+      'Content-Type':'application/json',
+    },
+    body:"",
+  }).then((response)=>response.json())
+  .then((data)=>setCartItems(data));
+}
   },[])
 
 
@@ -51,6 +64,19 @@ if(localStorage.getItem('auth-token')){
 
 const removeFromCart =(itemId)=>{                    // logic to remove items from cart
   setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+  if(localStorage.getItem('auth-token')){
+    fetch('http://localhost:4000/removefromcart',{
+    method:'POST',
+    headers:{
+      Accept:'application/form-data',
+      'auth-token':`${localStorage.getItem('auth-token')}`,
+      'Content-Type':'application/json',
+    },
+    body:JSON.stringify({"itemId":itemId}), 
+  })
+  .then((response)=>response.json())
+  .then((data)=>console.log(data));
+  }
 }
 
 const getTotalCartAmount = () => {
