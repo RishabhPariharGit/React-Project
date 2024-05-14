@@ -104,3 +104,20 @@ height: 35px;
     background: rgb(0, 0, 0);
     color: white;
 }
+
+.Product_main_search_Box{
+    display: inline-block;
+}
+
+
+.Product_Search_box{
+    background-color: azure;
+    position: absolute;
+}
+
+
+a.Product_main_search_Box {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
