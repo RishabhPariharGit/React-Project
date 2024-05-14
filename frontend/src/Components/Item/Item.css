@@ -10,6 +10,12 @@
     margin: 6px 0px;
 }
 
+.item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
 .item-prices {
     display: flex;
     gap: 20px;
