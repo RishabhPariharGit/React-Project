@@ -19,6 +19,13 @@
     background: #252525;
 }
 
+.popular h2{
+    margin-bottom: 0px;
+    margin-top: 45px;
+}
+
+
+
 .popular-item {
     margin-top: 50px;
     display: flex;
