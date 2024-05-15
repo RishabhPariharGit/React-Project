@@ -113,4 +113,9 @@ Date 30-apr-24
 - Started working on the project
 - Created the logic for Login Authentication
 - Tested the Login Page with the help of Thunderclient
+
+Date 15-May-24
+- Started Working on the project
+- Created the logic for add to cart
+- Added the add to cart butoon to the product card
   

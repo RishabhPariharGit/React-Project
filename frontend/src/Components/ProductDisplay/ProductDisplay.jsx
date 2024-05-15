@@ -6,7 +6,7 @@ import { ShopContext } from '../../Context/ShopContext';
 
 
 const ProductDisplay = (props) => {
-    const {product} = props;
+const {product} = props;
 const {addToCart} = useContext(ShopContext);
 
   return (
@@ -52,7 +52,9 @@ const {addToCart} = useContext(ShopContext);
     </div>
 </div>
 
-<button onClick={()=>{addToCart(product.id)}}>Add to Cart</button>
+<button onClick={()=>{addToCart(product.id)}}>Add to Cart</button> {/* This one is the Add to Cart button */}
+
+
 <p className="productdisplay-right-category">
     <span>Category : </span>Women T-Shirt, Crop Top
 </p>
