@@ -1,13 +1,17 @@
 .item {
-    width: 250px;
+    width: 200px;
+    border: 1px solid #c1c1c1;
 }
 
 
 .item img{
-    width:215px;
+    width:200px;
 }
 .item p {
-    margin: 6px 0px;
+    margin: 6px 15px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
 }
 
 .item a{
@@ -19,6 +23,8 @@
 .item-prices {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    margin: 10px 0px;
 }
 
 .item-price-new {
@@ -37,4 +43,18 @@
 .item:hover {
     transform: scale(1.05);
     transition: 0.6s;
+}
+
+.item button{
+    padding: 10px 10px;
+    width: 190px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background:#ff4141;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 5px;
 }
