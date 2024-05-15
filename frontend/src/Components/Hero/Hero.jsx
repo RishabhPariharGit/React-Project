@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import backgroundImage from '/home/rishabh/React-Project/frontend/src/Components/Assets/denim-2_1400x.webp';
+import backgroundImage from '../Assets/denim-2_1400x.webp';
 
 const Hero = () => {
     return (
