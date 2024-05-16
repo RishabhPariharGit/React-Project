@@ -1,38 +1,42 @@
 .offers_cont{
     position:relative;
-    background-image:url(https://img.freepik.com/free-vector/camping-area-nature-landscape_23-2148662481.jpg?t=st=1689714470~exp=1689715070~hmac=10e35466ad4d0c8d4dac76ed242e9306501291101137aadfe50c1197f253f13a);
-    background-color:#F2D479;
+    background-image:url(../Assets/Rectangle28.webp);
+    background-color:#ffffff;
     background-repeat: no-repeat;
     background-size: 50%;
-    padding: 150px;
-    height:150px;
+    padding: 265px;
+    height:200px;
     margin-top: 75px; 
   }
   
   .offers_cont h1{
+    font-family:"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
     position:absolute;
     margin-top:2%;
-    margin-left:44%;
+    margin-left:38%;
     font-family: 'Lilita One', cursive;
-    font-size:50px;
+    font-size:35px;
     color:#011126;
     line-height: 5px;
   }
   
   .offers_cont p{
+    font-family:"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
     position:absolute;
     margin-top:5%;
-    margin-left:44%;
+    margin-left:38%;
     font-family: 'Ubuntu Mono', monospace;
-    font-size:20px;
+    font-size:14px;
     color:#011126;
   }
   
   .offers_cont button{
-    margin-top:11%;
+    margin-top:14%;
     font-size: 18px;
+    margin-left: 63%;
     padding: 10px 35px;
-    border-radius: 7px;
+    border-radius: 0px;
+    border: 1px solid black;
     color: black;
     font-family: 'Ubuntu Mono', monospace;
     transition:  0.3s;
