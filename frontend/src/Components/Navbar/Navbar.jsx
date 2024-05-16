@@ -10,6 +10,8 @@ import { BsSearch } from 'react-icons/bs';
 
 const Navbar = () => {
 
+    const sercherr = "error"
+
 
     const [menu, setmenu] = useState("Shop");
     const {getTotalCartItems} = useContext(ShopContext);
@@ -77,7 +79,8 @@ const Navbar = () => {
                     <a href={`/product/${product.id}`} key={product.id} className='Product_main_search_Box'>{product.name}</a>
                 ))
         ) : (
-            <div className='No_results'>No Results Found</div>
+           [sercherr] 
+            
         )}
     </div>
 </div>
