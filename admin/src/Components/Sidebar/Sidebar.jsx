@@ -7,6 +7,21 @@ import list_product_icon from '../../assets/List_Product.png'
 const Sidebar = () => {
   return (
     <div className="sidebar">
+
+
+
+<Link to ={'/homechanges'} style={{textDecoration:"none"}}>
+    <div className="sidebar-item">
+            <img src={list_product_icon} alt="" />
+            <p>Home Changes</p>
+    </div>
+</Link>
+
+
+
+
+
+
 <Link to ={'/addproduct'} style={{textDecoration:"none"}}>
     <div className="sidebar-item">
             <img src={add_product_icon} alt="" />

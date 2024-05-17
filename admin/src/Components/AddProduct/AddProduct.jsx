@@ -84,7 +84,7 @@ const changeHandler = (e)=>{      //logic for updating the data on the database,
 
     </select>
   </div>
-
+  
   <div className="addproduct-itemfield">
     <label htmlFor="file-input">
       <img src={image?URL.createObjectURL(image):Upload_image}  className='addproduct-thumbnail-img'  alt="" />  {/*logic for uploaded image display is used here as well*/}
